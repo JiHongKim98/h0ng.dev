@@ -1,5 +1,5 @@
 const blogConfig = require("./blog-config")
-const { title, description, author, siteUrl } = blogConfig
+const { title, description, author, siteUrl, gtag } = blogConfig
 
 module.exports = {
   pathPrefix: "/gatsby-starter-hoodie",
@@ -59,6 +59,14 @@ module.exports = {
       options: {
         name: `markdown-pages`,
         path: `${__dirname}/contents/posts`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-gtag",
+      options: {
+        trackingId: gtag,
+        head: true,
+        anonymize: false,
       },
     },
     {
