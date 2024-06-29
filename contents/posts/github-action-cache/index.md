@@ -1,12 +1,11 @@
 ---
-title: "[CI] - GitHub Actions Cache"
+title: "GitHub Actions 캐싱처리 꼭 해야할까?"
 description: GitHub Actions caching 처리
 date: 2024-01-03
 update: 2024-01-03
 tags:
-  - ci
-  - github
-  - action
+  - ci/cd
+  - github actions
 series: 배포
 ---
 
