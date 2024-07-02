@@ -11,14 +11,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-catch-links`,
-    {
-      resolve: "gatsby-plugin-robots-txt",
-      options: {
-        host: siteUrl,
-        sitemap: `${siteUrl}/sitemap.xml`,
-        policy: [{ userAgent: "*", allow: "/" }],
-      },
-    },
+    `gatsby-plugin-robots-txt`,
     {
       resolve: `gatsby-plugin-react-redux`,
       options: {
@@ -158,7 +151,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-resolve-src`,
-    `gatsby-plugin-advanced-sitemap`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-feed`,
       options: {
