@@ -138,7 +138,7 @@ CloudFront 를 사용하면 캐시 무효화 작업만으로 프론트엔드에�
 
 <br/>
 
-이번 게시글에서는 백엔드에서 어떻게 Blue-Green 배포를 구현할 수 있는지 step-by-step 으로 알아보자.
+이번 게시글에서는 백엔드에서 어떻게 Blue-Green 배포를 구현할 수 있는지 단계별로 알아보자.
 
 ## 백엔드 무중단 배포 구현
 
@@ -324,7 +324,7 @@ Runners 탭에서 `New self-hosted runner` 버튼을 누르면 아래와 같이 
 
 ![](https://github.com/JiHongKim98/hong.dev/assets/144337839/c0190706-2013-4fdc-acf8-6c64f57b54b2)
 
-나는 여기서 추가로 러너가 장시간 켜져있을 경우 종료될 수 도 있다고 판단하여<br/>
+나는 여기서 추가로 러너가 장시간 켜져있을 경우 종료될 수도 있다고 판단하여<br/>
 매일 새벽 3시마다 runner 를 재실행하도록 크론 잡을 설정해줬다.
 
 ```shell
@@ -632,6 +632,6 @@ jobs:
 
 ## Ref.
 
-https://hudi.blog/zero-downtime-deployment/
-https://velog.io/@mminjg/Github-Actions-CodeDeploy를-이용한-EC2-배포-자동화
-https://velog.io/@hooni_/Blue-Green-무중단-배포
+https://hudi.blog/zero-downtime-deployment/<br/>
+https://velog.io/@mminjg/Github-Actions-CodeDeploy를-이용한-EC2-배포-자동화<br/>
+https://velog.io/@hooni_/Blue-Green-무중단-배포<br/>
