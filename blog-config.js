@@ -1,8 +1,8 @@
 module.exports = {
-  title: "JiHongKim98",
+  title: "h0ng.dev",
   description: "Hello :) This is JiHongKim98's tech blog",
   author: "JiHongKim98",
-  siteUrl: "https://jihongkim98.netlify.app",
+  siteUrl: "https://h0ng.dev",
   // gtag: "G-LD47R5RR46",
   gtag: "G-JHCCV51C69",
   links: {
@@ -10,7 +10,7 @@ module.exports = {
     email: "mailto:kinjihong9598@gmail.com",
   },
   utterances: {
-    repo: "JiHongKim98/hong.dev",
+    repo: "JiHongKim98/h0ng.dev",
     type: "pathname",
   },
 }
