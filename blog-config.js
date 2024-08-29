@@ -5,6 +5,7 @@ module.exports = {
   siteUrl: "https://h0ng.dev",
   // gtag: "G-LD47R5RR46",
   gtag: "G-JHCCV51C69",
+  adSense: "ca-pub-7725099475888546",
   links: {
     github: "https://github.com/JiHongKim98",
     email: "mailto:kinjihong9598@gmail.com",
