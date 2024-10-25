@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react"
+import React, { useCallback, useState } from "react"
 import styled from "styled-components"
 import SEO from "components/SEO"
 import { graphql } from "gatsby"
@@ -9,7 +9,7 @@ import TextField from "components/TextField"
 import Title from "components/Title"
 import VerticalSpace from "components/VerticalSpace"
 
-import { title, description, siteUrl } from "../../blog-config"
+import { description, siteUrl, title } from "../../blog-config"
 
 const SearchWrapper = styled.div`
   margin-top: 20px;
@@ -59,7 +59,10 @@ export default Search
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { fileAbsolutePath: { regex: "/contents/posts/" } }
+    ) {
       nodes {
         excerpt(pruneLength: 200, truncate: true)
         fields {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import _ from "lodash"
 import styled from "styled-components"
 import SEO from "components/SEO"
@@ -14,7 +14,7 @@ import TagList from "components/TagList"
 import PostList from "components/PostList"
 import VerticleSpace from "components/VerticalSpace"
 
-import { title, description, siteUrl } from "../../blog-config"
+import { description, siteUrl, title } from "../../blog-config"
 
 const TagListWrapper = styled.div`
   margin-top: 20px;
@@ -98,7 +98,10 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { fileAbsolutePath: { regex: "/contents/posts/" } }
+    ) {
       group(field: frontmatter___tags) {
         fieldValue
         totalCount
