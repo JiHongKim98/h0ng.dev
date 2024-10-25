@@ -14,7 +14,7 @@ module.exports = {
     repo: "JiHongKim98/h0ng.dev",
     repoId: "R_kgDOMQHd3w",
     category: "Comments",
-    categoryId: "DIC_kwDOMQHd384CjrK1",
+    categoryId: "DIC_kwDOMQHd384Cjrpg",
     mapping: "pathname",
     strict: "0",
     reactionsEnabled: "1",
